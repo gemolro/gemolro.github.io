@@ -16,9 +16,9 @@ $font-family-sans-serif: $inter;
 $custom-theme-colors: (
   "r": #f00808,
   "g": #00871e,
-  "b": #0081f8,
+  "b": #0099ff,
   //"n": #000000,
-  //"softgreen": rgb(159, 230, 179),,,
+  //"softgreen": rgb(159, 230, 179),,,,
 );
 $theme-colors: map-merge($theme-colors, $custom-theme-colors);
 $theme-colors-rgb: map-loop($theme-colors, to-rgb, "$value");
