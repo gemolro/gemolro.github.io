@@ -8,7 +8,7 @@ document.getElementById("optionWeb").addEventListener("click", (e) => {
     document.getElementById("optionGraphic_Btn").classList.add("opacity-25");
     document.getElementById("worksGraphic").style.display = "none";
   } else if (workOption == 2) {
-    document.getElementById("optionWeb_Btn").classList.add("opacity-25");
+    document.getElementById("optionSim_Btn").classList.add("opacity-25");
     document.getElementById("worksSim").style.display = "none";
   }
 
