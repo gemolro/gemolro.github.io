@@ -13,11 +13,13 @@
     />
     <script src=" https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.4.1/p5.min.js"></script>
 
+    <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
+
     <title>Gerardo's Portfolio</title>
   </head>
   <body>
-    <!-- NAVBAR -->
-    <nav class="navbar navbar-light">
+    <!-- NAVBAR 
+    <nav id="navbar_top" class="navbar navbar-light sticky-top bg-light">
       <div class="container">
         <a class="navbar-brand" href="#intro">
           <span class="display-4--enc1">Gerardo Molpe</span>
@@ -41,6 +43,17 @@
         </div>
       </div>
     </nav>
+    -->
+
+    <!--Navigation bar-->
+    <div id="nav-placeholder"></div>
+
+    <script>
+      $(function () {
+        $("#nav-placeholder").load("/html/nav.html");
+      });
+    </script>
+    <!--end of Navigation bar-->
 
     <div class="container">
       <!-- INTRO -->
@@ -161,7 +174,6 @@
                     </div>
                   </div>
                 </div>
-                <!--</a>-->
               </div>
               <div class="col">
                 <div class="card" name="first">
@@ -280,7 +292,7 @@
                     >
                       <img
                         class="align-items-center"
-                        style="width: 35px"
+                        style="width: 4%"
                         src="/images/Icon_circ.svg"
                         alt=""
                       />
@@ -311,7 +323,7 @@
                     >
                       <img
                         class="align-items-center"
-                        style="width: 35px"
+                        style="width: 4%"
                         src="/images/Icon_circ.svg"
                         alt=""
                       />
@@ -344,7 +356,7 @@
                     >
                       <img
                         class="align-items-center"
-                        style="width: 35px"
+                        style="width: 4%"
                         src="/images/Icon_circ.svg"
                         alt=""
                       />
@@ -375,7 +387,7 @@
                     >
                       <img
                         class="align-items-center"
-                        style="width: 35px"
+                        style="width: 4%"
                         src="/images/Icon_circ.svg"
                         alt=""
                       />
