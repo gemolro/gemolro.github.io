@@ -1,5 +1,6 @@
 let workOption = 1;
-let currentPic = null;
+let currentCard = null;
+let currentOpt = null;
 
 /*
 document.addEventListener("DOMContentLoaded", function () {
@@ -67,41 +68,77 @@ document.getElementById("optionSim").addEventListener("click", (e) => {
 });
 
 document.getElementById("works").addEventListener("mouseover", (e) => {
-  if (currentPic) return;
-
   let target = e.target.closest(".card");
-
-  if (!target) return;
-
-  currentPic = target;
-
-  onEnter(currentPic);
+  let current = currentCard;
+  currentCard = handleOnEnter(target, current);
 });
 
 document.getElementById("works").addEventListener("mouseout", (e) => {
-  if (!currentPic) return;
-
   let relatedTarget = e.relatedTarget;
+  let current = currentCard;
+  currentCard = handleOnLeave(relatedTarget, current);
+});
+
+document
+  .getElementById("nav-placeholder")
+  .addEventListener("mouseover", (e) => {
+    let target = e.target.querySelector("span");
+    if (target.id != "opt") return;
+    let current = currentOpt;
+    currentOpt = handleOnEnter(target, current);
+  });
+
+document.getElementById("nav-placeholder").addEventListener("mouseout", (e) => {
+  let relatedTarget = e.relatedTarget;
+  let current = currentOpt;
+  currentOpt = handleOnLeave(relatedTarget, current);
+});
+
+function handleOnEnter(target, current) {
+  if (current) return;
+
+  if (!target) return;
+
+  current = target;
+  if (current.tagName == "SPAN") onEnterOpt(current);
+  else onEnterCard(current);
+
+  return current;
+}
+
+function handleOnLeave(relatedTarget, current) {
+  if (!current) return;
 
   while (relatedTarget) {
-    if (relatedTarget == currentPic) return;
+    if (relatedTarget == current) return;
     relatedTarget = relatedTarget.parentNode;
   }
 
-  onLeave(currentPic);
-  currentPic = null;
-});
+  if (current.tagName == "SPAN") onLeaveOpt(current);
+  else onLeaveCard(current);
 
-function onEnter(elem) {
+  current = null;
+  return current;
+}
+
+function onEnterCard(elem) {
   let imagen = elem.querySelector("img");
   imagen.classList.add("opacity-25");
   let division = elem.querySelector("div");
   division.style = "display: block";
 }
 
-function onLeave(elem) {
+function onEnterOpt(elem) {
+  elem.classList.add("text-r");
+}
+
+function onLeaveCard(elem) {
   let imagen = elem.querySelector("img");
   imagen.classList.remove("opacity-25");
   let division = elem.querySelector("div");
   division.style = "display: none";
+}
+
+function onLeaveOpt(elem) {
+  elem.classList.remove("text-r");
 }
