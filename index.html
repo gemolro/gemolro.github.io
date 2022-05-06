@@ -62,11 +62,11 @@
           <div class="row justify-content-center">
             <div class="col-xxl-6"></div>
             <div class="col-xxl-6 my-5">
-              <h1 class="display-1--intro text-r">Welcome</h1>
+              <h1 id="mainText" class="display-1--intro text-r">Welcome</h1>
               <h2 class="display-2--s1">
                 I'm Gerardo,<br />
                 a Multimeda Engenieer<br />
-                and Design Lover <span class="text-r">:)</span><br />
+                and Design Lover <span id="smile" class="text-r">:)</span><br />
                 Come take a look at my work.
               </h2>
             </div>
@@ -81,10 +81,7 @@
       <!-- Options -->
       <section id="work">
         <div class="row text-center mt-3 mb-5">
-          <div
-            id="optionWeb_Btn"
-            class="col-4 d-flex justify-content-center opacity-25"
-          >
+          <div id="optionWeb_Btn" class="col-4 d-flex justify-content-center">
             <img
               class="align-items-center"
               style="width: 20px"
@@ -94,7 +91,7 @@
             <a
               id="optionWeb"
               class="display-2--s3 text-r ms-2"
-              href="#work"
+              href="#!"
               style="text-decoration: none"
             >
               Web Development
@@ -102,7 +99,7 @@
           </div>
           <div
             id="optionGraphic_Btn"
-            class="col-4 d-flex justify-content-center"
+            class="col-4 d-flex justify-content-center opacity-25"
           >
             <img
               class="align-items-center"
@@ -113,7 +110,7 @@
             <a
               id="optionGraphic"
               class="display-2--s3 text-b ms-2"
-              href="#work"
+              href="#!"
               style="text-decoration: none"
             >
               Graphic Design</a
@@ -132,7 +129,7 @@
             <a
               id="optionSim"
               class="display-2--s3 text-g ms-2"
-              href="#work"
+              href="#!"
               style="text-decoration: none"
             >
               Simulation</a
@@ -142,7 +139,7 @@
 
         <!-- Graphic Design Works -->
         <div id="works">
-          <div id="worksGraphic">
+          <div id="worksGraphic" style="display: none">
             <div class="row my-2" id="workPic">
               <div class="col">
                 <div class="card" name="first">
@@ -338,7 +335,7 @@
           </div>
 
           <!-- Web Development Works -->
-          <div id="worksWeb" style="display: none">
+          <div id="worksWeb">
             <div class="row my-2">
               <div class="col">
                 <div class="card" name="first">
@@ -585,6 +582,7 @@
     <!-- End of FOOTER-->
 
     <script type="module" src="/js/app.js"></script>
+    <script type="module" src="/js/nav.js"></script>
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
       integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
