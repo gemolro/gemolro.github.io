@@ -21,7 +21,7 @@ document.getElementById("optionWeb").addEventListener("click", (e) => {
   document.getElementById("worksWeb").style.display = "block";
   document.getElementById("mainText").classList.add("text-r");
   document.getElementById("smile").classList.add("text-r");
-  //document.getElementById("main_img").src = "./images/logos/Port1_0.png";
+  document.getElementById("main_img").src = "./images/logos/Port1_0.png";
 
   workOption = 0;
   n.setTheme(workOption);
@@ -45,7 +45,7 @@ document.getElementById("optionGraphic").addEventListener("click", (e) => {
   document.getElementById("worksGraphic").style.display = "block";
   document.getElementById("mainText").classList.add("text-b");
   document.getElementById("smile").classList.add("text-b");
-  //document.getElementById("main_img").src = "./images/logos/Port1_1.png";
+  document.getElementById("main_img").src = "./images/logos/Port1_1.png";
 
   workOption = 1;
   n.setTheme(workOption);
@@ -69,7 +69,7 @@ document.getElementById("optionSim").addEventListener("click", (e) => {
   document.getElementById("worksSim").style.display = "block";
   document.getElementById("mainText").classList.add("text-g");
   document.getElementById("smile").classList.add("text-g");
-  //document.getElementById("main_img").src = "./images/logos/Port1_2.png";
+  document.getElementById("main_img").src = "./images/logos/Port1_2.png";
 
   workOption = 2;
   n.setTheme(workOption);
