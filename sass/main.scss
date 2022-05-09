@@ -19,7 +19,7 @@ $custom-theme-colors: (
   "g": #00871e,
   "b": #288ed2,
   //"n": #000000,
-  //"softgreen": rgb(159, 230, 179),,,,,
+  //"softgreen": rgb(159, 230, 179),,,,,,,
 );
 $theme-colors: map-merge($theme-colors, $custom-theme-colors);
 $theme-colors-rgb: map-loop($theme-colors, to-rgb, "$value");
@@ -41,6 +41,11 @@ $container-max-widths: (
 );
 
 .display-1 {
+  &--name {
+    font-size: 9rem;
+    font-weight: 700;
+  }
+
   &--intro {
     font-size: 5rem;
     font-weight: 700;

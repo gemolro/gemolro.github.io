@@ -62,3 +62,9 @@ function onLeaveOpt(elem) {
   else if (currentTheme == 1) elem.classList.remove("text-b");
   else if (currentTheme == 2) elem.classList.remove("text-g");
 }
+
+document.getElementById("footer-placeholder").addEventListener("click", (e) => {
+  let target = e.target.querySelector("a");
+  console.log(e.target);
+  //window.open(url, "_blank").focus();
+});
