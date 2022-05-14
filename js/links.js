@@ -73,6 +73,9 @@ let songs = [
   "https://open.spotify.com/track/1WTE9lgXZ0vctdPEfYOoro?si=d1f94d9e2424483f",
   "https://open.spotify.com/track/5MU404gq1tr5Zoz7ikvJdO?si=c209c2cf60854d73",
   "https://open.spotify.com/track/3Z8Nvw0Kos5QBazNhgsaR6?si=33f9246b87534136",
+  "https://open.spotify.com/track/2X9RSNpXp81tmkiVdugHgO?si=26397963384b4600",
+  "https://open.spotify.com/track/53VNjAUpBJX7UJSjW5jjOm?si=18288aef789b445a",
+  "https://open.spotify.com/track/6U0FIYXCQ3TGrk4tFpLrEA?si=9e0b9ce804674e20",
 ];
 
 document.getElementById("film").addEventListener("click", (e) => {
